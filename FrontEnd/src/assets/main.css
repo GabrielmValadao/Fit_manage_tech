@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #424242;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  overflow: auto !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Estilo menu */
+.v-list-item--active > .v-list-item__overlay {
+  opacity: 0 !important;
+}
+#sidebar.v-navigation-drawer .v-list {
+  overflow: initial !important;
+}
+.v-list-item__overlay {
+  display: none;
+}
+.v-list-item__prepend > .v-icon {
+  margin-inline-end: 0px !important;
+}
+.menu-dropdown {
+  width: 100%;
+}
+.menu-dropdown .v-overlay__content {
+  max-width: 100% !important;
+  min-width: 100%;
+  width: 100%;
+  left: 0 !important;
+  top: 65px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/* Espaçamentos padrões para garantir funcionamento do menu */
+.container {
+  padding-left: 20% !important;
+  padding-right: 5% !important;
+  padding-bottom: 2% !important;
+  padding-bottom: 5%;
+}
+
+/* Estilo informacoes usuario menu  */
+#sidebar .v-avatar.v-avatar--size-default {
+  --v-avatar-height: 60px !important;
+}
+
+.v-list-item-title {
+  font-size: 15px !important;
+}
+
+.v-list-item-subtitle {
+  font-size: 12px !important;
+}
+
+/* Quando a tela é menor que MD o menu passa a ser dropdown,
+e por isso o valor do padding left é alterado */
+@media (max-width: 1279px) {
+  .container {
+    padding-left: 5% !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1600px) {
+  nav[data-v-e065371e] {
+    width: 18% !important;
+  }
+
+  .container {
+    padding-left: 23% !important;
+  }
+
+  #sidebar .v-avatar.v-avatar--size-default {
+    --v-avatar-height: 45px !important;
+  }
+
+  .v-list-item-title {
+    font-size: 12px !important;
+  }
+
+  .v-list-item-subtitle {
+    font-size: 9px !important;
+  }
+
+  .v-list-item__content {
+    font-size: 14px !important;
+  }
+}
